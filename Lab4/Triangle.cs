@@ -6,16 +6,16 @@ namespace Lab4
 {
     class Triangle : Shape
     {
-        public override void GetArea(double firstSide, double height)
+        public override double GetArea(double[] sizes)
         {
-            double area = (firstSide * height) / 2;
-            Console.WriteLine("\nThe area is: " + area);
+            double area = (sizes[0] * sizes[1]) / 2;
+            return area;
         }
 
-        public override void GetPerimeter(double firstSide, double secondSide)
+        public override double GetPerimeter(double[] sizes)
         {
-            double perimeter = firstSide + secondSide + 10;
-            Console.WriteLine("\nThe perimeter is: " + perimeter);
+            double perimeter = sizes[0] + sizes[1] + sizes[2];
+            return perimeter;
         }
     }
 }

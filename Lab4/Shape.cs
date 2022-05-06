@@ -6,8 +6,11 @@ namespace Lab4
 {
     abstract class Shape
     {
-        public abstract void GetArea(double size1, double size2);
+        public double[] Sizes;
+        public byte N;
 
-        public abstract void GetPerimeter(double size1, double size2);
+        public abstract double GetArea(double[]sizes);
+
+        public abstract double GetPerimeter(double[] sizes);
     }
 }
